@@ -1,4 +1,4 @@
-# Frontend Mentor: Challenge Name
+# Frontend Mentor: Intro Section with Dropdown Navigation
 Solution to the _[Intro Section with Dropdown Navigation](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5)_ challenge on Frontend Mentor.
 
 
@@ -11,7 +11,7 @@ Solution to the _[Intro Section with Dropdown Navigation](https://www.frontendme
 
 
 ### Solution
-Live Site: []()
+Live Site: [https://tinuola.github.io/fm_intro-dropdown-nav/](https://tinuola.github.io/fm_intro-dropdown-nav/)
 
 
 ### Retrospective
