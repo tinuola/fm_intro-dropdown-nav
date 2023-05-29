@@ -1,8 +1,8 @@
 :root {
---primary-white: hsl(0, 0%, 98%);
---primary-gray: hsl(0, 0%, 41%);
---primary-black: hsl(0, 0%, 8%);
---primary-font: 'Epilogue', sans-serif;
+  --primary-white: hsl(0, 0%, 98%);
+  --primary-gray: hsl(0, 0%, 41%);
+  --primary-black: hsl(0, 0%, 8%);
+  --primary-font: 'Epilogue', sans-serif;
 }
 
 body {
@@ -17,22 +17,23 @@ body {
 .sr-only {
   clip: rect(1px, 1px, 1px, 1px);
   -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   height: 1px;
   width: 1px;
   margin: -1px;
   overflow: hidden;
   padding: 0;
-  position: absolute;  
+  position: absolute;
 }
 
-.fm-attribution {
-  font-size: .75rem;
+.fm-byline {
+  font-size: 0.75rem;
   letter-spacing: 1px;
   line-height: 1.5;
+  text-align: center;
 }
 
-.fm-attribution,
-.fm-attribution a {
+.fm-byline,
+.fm-byline a {
   color: hsl(228, 45%, 44%);
 }
