@@ -6,8 +6,6 @@
 }
 
 body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
   font-family: var(--primary-font);
   font-size: 1.125rem;
   display: grid;
@@ -29,7 +27,6 @@ body {
 .fm-byline {
   font-size: 0.75rem;
   letter-spacing: 1px;
-  line-height: 1.5;
   text-align: center;
 }
 
