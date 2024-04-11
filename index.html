@@ -3,52 +3,84 @@
     <meta charset="UTF-8" />
     <meta
       http-equiv="X-UA-Compatible"
-      content="IE=edge" />
+      content="IE=edge"
+    />
     <!-- displays site properly based on user's device -->
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0" />
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      name="author"
+      content="TechTinu"
+    />
+    <meta
+      name="description"
+      content="Solution to the Intro Section with Dropdown Navigation challenge on Frontend Mentor."
+    />
+    <meta
+      name="theme-color"
+      content="#8e4cb6"
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/images/favicon-32x32.png" />
+      href="assets/images/favicon-32x32.png"
+    />
     <!-- Google Fonts -->
     <link
       rel="preconnect"
-      href="https://fonts.googleapis.com" />
+      href="https://fonts.googleapis.com"
+    />
     <link
       rel="preconnect"
       href="https://fonts.gstatic.com"
-      crossorigin />
+      crossorigin
+    />
     <link
-      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700&display=swap"
-      rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Project Stylesheets -->
     <link
       rel="stylesheet"
-      href="css/reset.css" />
+      href="css/reset.css"
+    />
     <link
       rel="stylesheet"
-      href="css/style.css" />
+      href="css/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="css/a11y.css"
+    />
     <!-- Script -->
     <script
       src="js/script.js"
-      defer></script>
+      defer
+    ></script>
     <title>Intro Section with Dropdown Navigation | Frontend Mentor</title>
   </head>
   <body>
     <div class="container">
       <header>
+        <a
+          href="#main"
+          class="skip"
+          >Skip to main content</a
+        >
         <div class="logo-wrapper">
           <img
-            src="./assets/images/logo.svg"
-            alt="Company logo" />
+            src="assets/images/logo.svg"
+            alt="Company logo"
+          />
         </div>
         <nav>
           <button
             aria-expanded="false"
-            aria-controls="menu-list">
+            aria-controls="menu-list"
+          >
             hamburger
           </button>
           <ul class="main-menu">
@@ -78,37 +110,41 @@
           </div>
         </nav>
       </header>
-      <main>
+      <main id="main">
         <h1 class="sr-only">
           Intro Section with Dropdown Navigation - A Frontend Mentor Project
         </h1>
         <div>
           <h2>Make remote work</h2>
           <h3>
-            Get your team in sync, no matter your location. Streamline processes, create
-            team rituals, and watch productivity soar.
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
           </h3>
           <button>Learn more</button>
           <ul class="client-logos">
             <li>
               <img
-                src="./assets/images/client-databiz.svg"
-                alt="" />
+                src="assets/images/client-databiz.svg"
+                alt=""
+              />
             </li>
             <li>
               <img
-                src="./assets/images/client-audiophile.svg"
-                alt="" />
+                src="assets/images/client-audiophile.svg"
+                alt=""
+              />
             </li>
             <li>
               <img
-                src="./assets/images/client-meet.svg"
-                alt="" />
+                src="assets/images/client-meet.svg"
+                alt=""
+              />
             </li>
             <li>
               <img
-                src="./assets/images/client-maker.svg"
-                alt="" />
+                src="assets/images/client-maker.svg"
+                alt=""
+              />
             </li>
           </ul>
         </div>
