@@ -31,8 +31,8 @@ html:focus-within {
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  line-height: calc(1em + 0.25rem);
-  /* line-height: 1.5; */
+  /* line-height: calc(1em + 0.25rem); */
+  line-height: 1.5;
   text-rendering: optimizeSpeed;
   -webkit-font-smoothing: antialiased;
 }
@@ -46,7 +46,7 @@ p {
   overflow-wrap: break-word;
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
-  hyphens: auto;
+  /* hyphens: auto; */
 }
 
 /* Make media easier to work with */

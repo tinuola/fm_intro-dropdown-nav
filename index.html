@@ -63,9 +63,8 @@
     <title>Intro Section with Dropdown Navigation | Frontend Mentor</title>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <a
+    <header>
+      <!-- <a
           href="#main"
           class="skip"
           >Skip to main content</a
@@ -108,19 +107,22 @@
             <button>Login</button>
             <button>Register</button>
           </div>
-        </nav>
-      </header>
+        </nav> -->
+    </header>
+    <div class="container">
       <main id="main">
         <h1 class="sr-only">
           Intro Section with Dropdown Navigation - A Frontend Mentor Project
         </h1>
-        <div>
-          <h2>Make remote work</h2>
-          <h3>
-            Get your team in sync, no matter your location. Streamline
-            processes, create team rituals, and watch productivity soar.
-          </h3>
-          <button>Learn more</button>
+        <section class="content-wrapper">
+          <div class="content">
+            <h2>Make remote work</h2>
+            <p>
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <button>Learn more</button>
+          </div>
           <ul class="client-logos">
             <li>
               <img
@@ -147,11 +149,15 @@
               />
             </li>
           </ul>
+        </section>
+        <div class="img-wrapper">
+          <img
+            src="/assets/images/image-hero-desktop.png"
+            alt=""
+          />
         </div>
-        <div>Background Image</div>
       </main>
     </div>
-
     <footer class="fm-byline-row">
       <p class="fm-byline">
         Challenge by

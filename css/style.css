@@ -23,6 +23,68 @@ body {
   /* font-size: 1.125rem; */
 }
 
+header {
+  background-color: var(--medium-gray);
+  padding: 32px 40px 0 40px;
+  height: 65px;
+  width: 100%;
+}
+
+.container {
+  padding: 65px 130px 130px 165px;
+}
+
+main {
+  display: flex;
+  gap: 125px;
+}
+
+.content-wrapper {
+  background-color: blue;
+  padding-top: 104px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 53%;
+}
+
+.content h2 {
+  font-size: 80px;
+  line-height: 1;
+  margin-bottom: 48px;
+}
+
+.content p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  padding-right: 95px;
+  margin-bottom: 50px;
+  color: var(--medium-gray);
+}
+
+.content button {
+  background-color: var(--off-black);
+  color: var(--off-white);
+  border: 0;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+
+.client-logos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-wrapper {
+  background-color: tomato;
+  flex-basis: 47%;
+}
+
+.fm-byline-row {
+  padding-bottom: 2rem;
+}
+
 .fm-byline {
   font-size: 0.75rem;
   letter-spacing: 1px;
