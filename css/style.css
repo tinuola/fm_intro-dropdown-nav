@@ -31,35 +31,49 @@ header {
 }
 
 .container {
-  padding: 65px 130px 130px 165px;
+  padding-top: 24px;
+  padding-bottom: 94px;
 }
 
 main {
   display: flex;
-  gap: 125px;
+  flex-direction: column;
+  row-gap: 48px;
+}
+
+.img-wrapper {
+  /* background-color: tomato; */
+  flex-basis: 100%;
+  order: 1;
 }
 
 .content-wrapper {
-  background-color: blue;
-  padding-top: 104px;
+  /* background-color: blue; */
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-basis: 53%;
+  flex-basis: 100%;
+  order: 2;
+  padding: 1rem;
+}
+
+.content {
+  margin-bottom: 3rem;
 }
 
 .content h2 {
-  font-size: 80px;
+  font-size: 36px;
   line-height: 1;
-  margin-bottom: 48px;
+  margin-bottom: 1rem;
 }
 
 .content p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
-  line-height: 28px;
-  padding-right: 95px;
-  margin-bottom: 50px;
+  line-height: 26px;
+  padding: 0 1rem;
+  margin-bottom: 24px;
   color: var(--medium-gray);
 }
 
@@ -68,7 +82,7 @@ main {
   color: var(--off-white);
   border: 0;
   border-radius: 1rem;
-  padding: 1rem 2rem;
+  padding: 0.75rem 1.25rem;
 }
 
 .client-logos {
@@ -76,12 +90,16 @@ main {
   justify-content: space-between;
 }
 
-.img-wrapper {
-  background-color: tomato;
-  flex-basis: 47%;
+.client-logos li img {
+  width: 80px;
+}
+
+.client-logos li:nth-of-type(2) img {
+  width: 55px;
 }
 
 .fm-byline-row {
+  /* margin-top: 2rem; */
   padding-bottom: 2rem;
 }
 
@@ -94,4 +112,62 @@ main {
 .fm-byline,
 .fm-byline a {
   color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 600px) {
+  .content p {
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 65px 0 130px 0;
+  }
+
+  main {
+    flex-direction: row;
+    /* -moz-column-gap: 125px;
+    column-gap: 125px; */
+  }
+
+  .img-wrapper {
+    flex-basis: 47%;
+    order: 2;
+  }
+
+  .content-wrapper {
+    text-align: left;
+    flex-basis: 53%;
+    order: 1;
+    padding: 0;
+    padding-top: 104px;
+  }
+
+  .content h2 {
+    font-size: 80px;
+    line-height: 1;
+    margin-bottom: 48px;
+  }
+
+  .content p {
+    padding: 0;
+    padding-right: 95px;
+    margin-bottom: 50px;
+  }
+
+  .content button {
+    padding: 1rem 2rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    padding: 65px 130px 130px 165px;
+  }
+
+  main {
+    -moz-column-gap: 125px;
+    column-gap: 125px;
+  }
 }
