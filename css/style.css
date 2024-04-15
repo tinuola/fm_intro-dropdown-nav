@@ -5,15 +5,7 @@
   --primary-font: 'Epilogue', sans-serif;
 }
 
-@media only screen and (min-width: 600px) {
-  /* background-image: url('../assets/images/'); */
-}
-
-/***********/
-/* Section */
-/***********/
 html {
-  /* background-color: rgb(196, 187, 187); */
 }
 
 body {
@@ -26,12 +18,14 @@ body {
   justify-items: center;
   align-items: center;
   font-family: var(--primary-font);
+  font-size: 1rem;
   background-color: var(--off-white);
 }
 
 header {
   background-color: var(--medium-gray);
-  padding: 1rem 1rem 1.5rem 1rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
   height: 2.5rem;
   width: 100%;
 }
@@ -40,7 +34,7 @@ main {
   display: flex;
   flex-direction: column;
   row-gap: 3rem;
-  max-width: 1145px;
+  max-width: 1360px;
   width: 100%;
   padding-bottom: 5.875rem;
 }
@@ -72,7 +66,6 @@ main {
 }
 
 .content p {
-  font-size: 1rem;
   font-weight: 500;
   line-height: 26px;
   margin-bottom: 1.5rem;
@@ -129,41 +122,50 @@ main {
   }
 }
 
+@media only screen and (min-width: 601px) and (max-width: 799px) {
+  .img-wrapper img {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
 @media only screen and (min-width: 800px) {
+  body {
+    font-size: 1.125rem;
+  }
+
   header {
-    padding: 32px 40px 0 40px;
+    padding: 2rem 1.5rem 0 1.5rem;
   }
 
   main {
     flex-direction: row;
-    /* -moz-column-gap: 125px;
-    column-gap: 125px; */
-    padding: 65px 0 130px 0;
+    row-gap: 0;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    padding: 3rem 1.5rem 5.8125rem 1.5rem;
   }
 
   .img-wrapper {
-    flex-basis: 47%;
+    flex-basis: 45%;
     order: 2;
   }
 
   .content-wrapper {
     text-align: left;
-    flex-basis: 53%;
+    flex-basis: 55%;
     order: 1;
-    padding: 0;
-    padding-top: 104px;
+    padding-top: 3.5rem;
   }
 
   .content h2 {
-    font-size: 80px;
+    font-size: 4rem;
     line-height: 1;
-    margin-bottom: 48px;
+    margin-bottom: 3rem;
   }
 
   .content p {
-    padding: 0;
-    padding-right: 95px;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
   }
 
   .content button {
@@ -171,13 +173,44 @@ main {
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  .container {
-    padding: 65px 130px 130px 165px;
+@media only screen and (min-width: 1000px) {
+  header {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   main {
-    -moz-column-gap: 125px;
-    column-gap: 125px;
+    -moz-column-gap: 0;
+    column-gap: 0;
+  }
+
+  .content p {
+    padding-right: 5.9375rem;
+  }
+
+  .client-logos {
+    padding-right: 3.75rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  main {
+    -moz-column-gap: 100px;
+
+    column-gap: 100px;
+    padding: 5rem 5.625rem 7.8125rem 8.125rem;
+  }
+
+  .img-wrapper {
+    flex-basis: 48%;
+  }
+
+  .content-wrapper {
+    flex-basis: 52%;
+    padding-top: 6.5rem;
+  }
+
+  .content h2 {
+    font-size: 5rem;
   }
 }
