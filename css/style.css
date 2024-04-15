@@ -6,74 +6,76 @@
 }
 
 @media only screen and (min-width: 600px) {
+  /* background-image: url('../assets/images/'); */
 }
 
 /***********/
 /* Section */
 /***********/
+html {
+  /* background-color: rgb(196, 187, 187); */
+}
 
 body {
+  min-width: 375px;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  /* grid-template-rows: 1fr auto; */
   justify-items: center;
   align-items: center;
-  /* background-image: url('../assets/images/'); */
   font-family: var(--primary-font);
-  /* font-size: 1.125rem; */
+  background-color: var(--off-white);
 }
 
 header {
   background-color: var(--medium-gray);
-  padding: 32px 40px 0 40px;
-  height: 65px;
+  padding: 1rem 1rem 1.5rem 1rem;
+  height: 2.5rem;
   width: 100%;
-}
-
-.container {
-  padding-top: 24px;
-  padding-bottom: 94px;
 }
 
 main {
   display: flex;
   flex-direction: column;
-  row-gap: 48px;
+  row-gap: 3rem;
+  max-width: 1145px;
+  width: 100%;
+  padding-bottom: 5.875rem;
 }
 
 .img-wrapper {
-  /* background-color: tomato; */
   flex-basis: 100%;
   order: 1;
 }
 
 .content-wrapper {
-  /* background-color: blue; */
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex-basis: 100%;
   order: 2;
-  padding: 1rem;
+  padding: 0 1rem;
+  text-align: center;
 }
 
 .content {
-  margin-bottom: 3rem;
+  margin: 0 auto 3rem auto;
 }
 
 .content h2 {
-  font-size: 36px;
+  font-size: 2.25rem;
   line-height: 1;
+  letter-spacing: -0.5px;
   margin-bottom: 1rem;
 }
 
 .content p {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 26px;
-  padding: 0 1rem;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
   color: var(--medium-gray);
 }
 
@@ -85,9 +87,16 @@ main {
   padding: 0.75rem 1.25rem;
 }
 
+.content,
+.client-logos {
+  max-width: 345px;
+  width: 100%;
+}
+
 .client-logos {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 .client-logos li img {
@@ -99,7 +108,6 @@ main {
 }
 
 .fm-byline-row {
-  /* margin-top: 2rem; */
   padding-bottom: 2rem;
 }
 
@@ -115,20 +123,22 @@ main {
 }
 
 @media only screen and (min-width: 600px) {
-  .content p {
-    padding: 0 2rem;
+  .content,
+  .client-logos {
+    max-width: 555px;
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .container {
-    padding: 65px 0 130px 0;
+@media only screen and (min-width: 800px) {
+  header {
+    padding: 32px 40px 0 40px;
   }
 
   main {
     flex-direction: row;
     /* -moz-column-gap: 125px;
     column-gap: 125px; */
+    padding: 65px 0 130px 0;
   }
 
   .img-wrapper {

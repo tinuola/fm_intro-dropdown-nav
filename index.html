@@ -109,60 +109,56 @@
           </div>
         </nav> -->
     </header>
-    <div class="container">
-      <main id="main">
-        <h1 class="sr-only">
-          Intro Section with Dropdown Navigation - A Frontend Mentor Project
-        </h1>
-        <div class="img-wrapper">
-          <img
-            srcset="
-              assets/images/image-hero-mobile.png  750w,
-              assets/images/image-hero-desktop.png 960w
-            "
-            sizes="(min-width: 768px) 960px"
-            src="assets/images/image-hero-mobile.png"
-            alt=""
+    <main id="main">
+      <h1 class="sr-only">
+        Intro Section with Dropdown Navigation - A Frontend Mentor Project
+      </h1>
+      <div class="img-wrapper">
+        <picture>
+          <source
+            srcset="assets/images/image-hero-desktop.png"
+            media="(min-width: 800px)"
           />
+          <img src="assets/images/image-hero-mobile.png" />
+        </picture>
+      </div>
+      <section class="content-wrapper">
+        <div class="content">
+          <h2>Make remote work</h2>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button>Learn more</button>
         </div>
-        <section class="content-wrapper">
-          <div class="content">
-            <h2>Make remote work</h2>
-            <p>
-              Get your team in sync, no matter your location. Streamline
-              processes, create team rituals, and watch productivity soar.
-            </p>
-            <button>Learn more</button>
-          </div>
-          <ul class="client-logos">
-            <li>
-              <img
-                src="assets/images/client-databiz.svg"
-                alt=""
-              />
-            </li>
-            <li>
-              <img
-                src="assets/images/client-audiophile.svg"
-                alt=""
-              />
-            </li>
-            <li>
-              <img
-                src="assets/images/client-meet.svg"
-                alt=""
-              />
-            </li>
-            <li>
-              <img
-                src="assets/images/client-maker.svg"
-                alt=""
-              />
-            </li>
-          </ul>
-        </section>
-      </main>
-    </div>
+        <ul class="client-logos">
+          <li>
+            <img
+              src="assets/images/client-databiz.svg"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src="assets/images/client-audiophile.svg"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src="assets/images/client-meet.svg"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src="assets/images/client-maker.svg"
+              alt=""
+            />
+          </li>
+        </ul>
+      </section>
+    </main>
     <footer class="fm-byline-row">
       <p class="fm-byline">
         Challenge by
