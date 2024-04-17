@@ -17,12 +17,6 @@ Josh Comeau: https://www.joshwcomeau.com/css/custom-css-reset/
   padding: 0;
 }
 
-/* Allow percentage-based heights in the application */
-html,
-body {
-  height: 100%;
-}
-
 /* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
@@ -31,10 +25,17 @@ html:focus-within {
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  /* line-height: calc(1em + 0.25rem); */
   line-height: 1.5;
   text-rendering: optimizeSpeed;
   -webkit-font-smoothing: antialiased;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.1;
 }
 
 /* Avoid text overflows */
@@ -44,9 +45,6 @@ h3,
 h4,
 p {
   overflow-wrap: break-word;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  /* hyphens: auto; */
 }
 
 /* Make media easier to work with */

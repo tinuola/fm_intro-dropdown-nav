@@ -46,14 +46,17 @@
     <link
       rel="stylesheet"
       href="css/reset.css"
+      type="text/css"
     />
     <link
       rel="stylesheet"
       href="css/style.css"
+      type="text/css"
     />
     <link
       rel="stylesheet"
       href="css/a11y.css"
+      type="text/css"
     />
     <!-- Script -->
     <script
@@ -76,14 +79,14 @@
         />
       </div>
       <nav>
-        <!-- <button
-          aria-expanded="false"
-          aria-controls="menu-list"
-        >
-          hamburger
-        </button> -->
+        <div class="overlay"></div>
+        <div class="hamburger">
+          <div class="bar bar1"></div>
+          <div class="bar bar2"></div>
+          <div class="bar bar3"></div>
+        </div>
         <ul class="main-menu">
-          <li>
+          <li class="dropdown">
             Features
             <ul class="sub-menu sub-menu-with-icons">
               <li>Todo List</li>
@@ -92,7 +95,7 @@
               <li>Planning</li>
             </ul>
           </li>
-          <li>
+          <li class="dropdown">
             Company
             <ul class="sub-menu">
               <li>History</li>
