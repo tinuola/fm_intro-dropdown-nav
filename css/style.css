@@ -62,11 +62,9 @@ nav {
   top: 0;
   height: 100vh;
   padding-left: 2rem;
-  width: 64%;
-}
-
-nav.show {
-  /* padding-left: 1.5rem; */
+  min-width: 240px;
+  max-width: 330px;
+  width: 60%;
 }
 
 .hamburger {
@@ -94,24 +92,21 @@ nav.show {
   row-gap: 1rem;
 }
 
-.main-menu .dropdown,
 .main-menu .dropdown {
   position: relative;
 }
 
-.main-menu .dropdown::after,
 .main-menu .dropdown::after {
   content: url('../assets/images/icon-arrow-down.svg');
-  margin-left: 0.5rem;
-  position: relative;
-  top: -2px;
+  position: absolute;
+  top: 8px;
+  left: 85px;
 }
 
 .sub-menu {
   display: none;
-  background-color: white;
   position: relative;
-  padding: 1.5rem;
+  padding: 0 1.5rem;
   margin-top: 1.25rem;
   border-radius: 0.625rem;
   /* display: flex; */
@@ -299,31 +294,52 @@ main {
   }
 
   nav {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    min-width: unset;
+    max-width: unset;
     font-size: 0.875rem;
+    flex-direction: row;
+    position: static;
+    right: 0;
+    top: 0;
+    height: 0;
+    padding-left: 0;
   }
 
   .main-menu {
-    display: flex;
+    flex-direction: row;
+    row-gap: 0;
     justify-content: space-between;
     -moz-column-gap: 2.5rem;
     column-gap: 2.5rem;
   }
 
+  .main-menu .dropdown::after {
+    position: relative;
+    padding-left: 0.5rem;
+    top: -2px;
+    left: 0;
+  }
+
   .sub-menu {
-    /* position: absolute; */
-    /* background-color: white; */
+    position: absolute;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px -3px hsl(0deg 0% 75%);
   }
 
   .nav-btns-wrapper {
     flex-direction: row;
+    width: unset;
+    margin-top: 0;
   }
 
   .nav-btn:nth-of-type(1) {
     margin-right: 2.5rem;
+    margin-bottom: 0;
   }
 
   .hamburger {
