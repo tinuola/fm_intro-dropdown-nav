@@ -103,13 +103,6 @@ nav {
   left: 85px;
 }
 
-/* .main-menu .dropdown::after {
-  content: url('../assets/images/icon-arrow-down.svg');
-  position: absolute;
-  top: 8px;
-  left: 85px;
-} */
-
 .sub-menu {
   position: relative;
   padding: 0 1.5rem;
