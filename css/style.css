@@ -87,7 +87,7 @@ nav {
 }
 
 .main-menu {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   row-gap: 1rem;
 }
@@ -150,7 +150,7 @@ nav {
 }
 
 .nav-btns-wrapper {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   width: 80%;
   margin-top: 2rem;
@@ -315,6 +315,7 @@ main {
   }
 
   .main-menu {
+    display: flex;
     flex-direction: row;
     row-gap: 0;
     justify-content: space-between;
@@ -328,12 +329,6 @@ main {
     top: -15px;
     left: 75px;
   }
-  /* .main-menu .dropdown::after {
-    position: relative;
-    padding-left: 0.5rem;
-    top: -2px;
-    left: 0;
-  } */
 
   .sub-menu {
     position: absolute;
@@ -345,6 +340,7 @@ main {
   }
 
   .nav-btns-wrapper {
+    display: flex;
     flex-direction: row;
     width: unset;
     margin-top: 0;

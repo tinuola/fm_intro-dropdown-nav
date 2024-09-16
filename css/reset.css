@@ -1,4 +1,4 @@
-/* Resets based on: 
+/* Resets curated from: 
 Andy Bell: https://andy-bell.co.uk/a-modern-css-reset/
 Elad Schecter: https://elad2412.github.io/the-new-css-reset/
 Josh Comeau: https://www.joshwcomeau.com/css/custom-css-reset/
@@ -30,7 +30,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Set shorter line heights on headings and interactive elements */
+/* Set shorter line heights on headings */
 h1,
 h2,
 h3,
